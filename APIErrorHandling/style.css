@@ -1,0 +1,58 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    padding: 30px;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: #1e293b;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#message {
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.success {
+    color: #16a34a;
+}
+
+.error {
+    color: #dc2626;
+}
+
+.user-card {
+    background-color: #f8fafc;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    text-align: left;
+}

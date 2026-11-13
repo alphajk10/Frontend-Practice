@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="form-card">
+
+            <h1>Student Registration</h1>
+
+            <p class="subtitle">
+                Enter your details to register
+            </p>
+
+            <form id="registrationForm" novalidate>
+
+                <!-- Personal Information -->
+                <h3>Personal Information</h3>
+
+                <div class="form-group">
+
+                    <label for="fullname">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="fullname"
+                        placeholder="Enter your full name"
+                    >
+
+                    <small class="error" id="nameError"></small>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                    >
+
+                    <small class="error" id="emailError"></small>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="phone">Phone Number</label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter 10 digit phone number"
+                    >
+
+                    <small class="error" id="phoneError"></small>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="dob">Date of Birth</label>
+
+                    <input type="date" id="dob">
+
+                    <small class="error" id="dobError"></small>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Gender</label>
+
+                    <div class="radio-group">
+
+                        <label>
+                            <input type="radio" name="gender" value="Male">
+                            Male
+                        </label>
+
+                        <label>
+                            <input type="radio" name="gender" value="Female">
+                            Female
+                        </label>
+
+                        <label>
+                            <input type="radio" name="gender" value="Other">
+                            Other
+                        </label>
+
+                    </div>
+
+                    <small class="error" id="genderError"></small>
+
+                </div>
+
+
+                <!-- Academic Information -->
+                <h3>Academic Information</h3>
+
+                <div class="form-group">
+
+                    <label for="course">Select Course</label>
+
+                    <select id="course">
+
+                        <option value="">Select Course</option>
+
+                        <option value="BCA">BCA</option>
+
+                        <option value="MCA">MCA</option>
+
+                        <option value="BTech">BTech</option>
+
+                        <option value="MTech">MTech</option>
+
+                        <option value="MBA">MBA</option>
+
+                    </select>
+
+                    <small class="error" id="courseError"></small>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="college">College Name</label>
+
+                    <input
+                        type="text"
+                        id="college"
+                        placeholder="Enter college name"
+                    >
+
+                    <small class="error" id="collegeError"></small>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="year">Year of Study</label>
+
+                    <select id="year">
+
+                        <option value="">Select Year</option>
+
+                        <option value="1">First Year</option>
+
+                        <option value="2">Second Year</option>
+
+                        <option value="3">Third Year</option>
+
+                    </select>
+
+                    <small class="error" id="yearError"></small>
+
+                </div>
+
+
+                <!-- Address -->
+                <h3>Address Information</h3>
+
+                <div class="form-group">
+
+                    <label for="address">Address</label>
+
+                    <textarea
+                        id="address"
+                        rows="4"
+                        placeholder="Enter your address"
+                    ></textarea>
+
+                    <small class="error" id="addressError"></small>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="district">District</label>
+
+                    <input
+                        type="text"
+                        id="district"
+                        placeholder="Enter district"
+                    >
+
+                    <small class="error" id="districtError"></small>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="pin">PIN Code</label>
+
+                    <input
+                        type="text"
+                        id="pin"
+                        placeholder="Enter 6 digit PIN code"
+                    >
+
+                    <small class="error" id="pinError"></small>
+
+                </div>
+
+
+                <!-- Password -->
+                <h3>Account Information</h3>
+
+                <div class="form-group">
+
+                    <label for="password">Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Create a password"
+                    >
+
+                    <small class="error" id="passwordError"></small>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="confirmPassword">Confirm Password</label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm your password"
+                    >
+
+                    <small class="error" id="confirmPasswordError"></small>
+
+                </div>
+
+
+                <!-- Terms -->
+                <div class="terms">
+
+                    <label>
+                        <input type="checkbox" id="terms">
+                        I agree to the terms and conditions
+                    </label>
+
+                </div>
+
+                <small class="error" id="termsError"></small>
+
+
+                <!-- Buttons -->
+                <div class="buttons">
+
+                    <button type="submit">
+                        Register Now
+                    </button>
+
+                    <button type="reset" class="reset-btn">
+                        Clear Form
+                    </button>
+
+                </div>
+
+                <p id="successMessage"></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
